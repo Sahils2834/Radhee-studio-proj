@@ -20,7 +20,7 @@ export default function App() {
   const location = useLocation();
   const role = sessionStorage.getItem("role");
 
-  // ✅ FIX: hide navbar on auth & admin pages
+  
   const hideNavbarPaths = [ "/admin/dashboard"];
   const hideNavbar = hideNavbarPaths.includes(location.pathname);
 
